@@ -77,7 +77,7 @@ pytest
 ```
 
 ```
-50 passed
+52 passed
 ```
 
 ## Walk through the workflow

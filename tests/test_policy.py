@@ -88,3 +88,13 @@ def test_every_returned_rule_is_documented():
              route(is_existing_customer=True), route(is_existing_customer=True, account_owner_id="a"),
              route(is_existing_customer=True, account_owner_id="a", open_opportunity_owner_ids="b")]
     assert {c["rule_id"] for c in cases} == documented
+
+
+def test_missing_data_beats_enterprise_threshold():
+    d = route(employee_count=5000, missing_fields="country", missing_required_data=True, territory_owner_id=None)
+    assert d["rule_id"] == "MISSING_REQUIRED_DATA"
+
+
+def test_duplicate_beats_missing_data():
+    d = route(duplicate_of_lead_id="L-001", missing_fields="country", missing_required_data=True)
+    assert d["rule_id"] == "DUPLICATE_LEAD"
