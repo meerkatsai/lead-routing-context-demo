@@ -1,0 +1,16 @@
+lead_id,expected_rule_id,expected_destination,why
+L-001,TERRITORY_OWNER,own_maya,Clean US lead under the enterprise threshold
+L-002,EXISTING_ACCOUNT_OWNER,own_oliver,Existing customer beats the enterprise threshold
+L-003,EXISTING_ACCOUNT_OWNER,own_maya,Open opportunity owner is kept even though country is missing
+L-004,EXISTING_OWNER_MISSING,revops_review,Customer account has no owner on record
+L-005,OWNER_CONFLICT,revops_review,Two open opportunities with different owners
+L-006,MISSING_REQUIRED_DATA,revops_review,Country is missing; the notes hint at India but code does not guess
+L-007,MISSING_REQUIRED_DATA,revops_review,Personal email and no company domain
+L-008,ENTERPRISE_THRESHOLD,enterprise_queue,"Employee count ""1,200"" parses to 1200"
+L-009,TERRITORY_OWNER,own_maya,One below the threshold
+L-010,ENTERPRISE_THRESHOLD,enterprise_queue,Exactly at the threshold
+L-011,NO_SAFE_MATCH,revops_review,No territory owner for FR
+L-012,DUPLICATE_LEAD,L-001,Same person as L-001 with different formatting
+L-013,TERRITORY_OWNER,own_maya,Country alias and URL-style domain are normalized
+L-014,TERRITORY_OWNER,own_sam,Unknown size; routed by territory and flagged
+L-015,EXISTING_ACCOUNT_OWNER,own_priya,Domain derived from email matches a customer account

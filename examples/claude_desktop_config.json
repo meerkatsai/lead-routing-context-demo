@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "lead-routing-demo": {
+      "command": "/ABSOLUTE/PATH/TO/lead-routing-context-demo/.venv/bin/lead-routing-mcp"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+account_id,account_name,company_domain,is_customer,account_owner_id,updated_at
+A-100,Brightloom,brightloom.io,true,own_oliver,2026-09-20T10:00:00
+A-101,Harborline Freight,harborline.com,true,,2026-09-12T14:30:00
+A-102,Quillstack,quillstack.dev,false,own_maya,2026-09-28T09:00:00
+A-103,Tidewater Analytics,tidewater-analytics.com,false,,2026-09-25T16:45:00
+A-104,Ferncastle,ferncastle.co,true,own_priya,2026-09-30T11:15:00

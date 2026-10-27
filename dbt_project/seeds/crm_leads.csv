@@ -1,0 +1,16 @@
+lead_id,created_at,first_name,last_name,email,company_name,company_domain,country,employee_count,source,notes
+L-001,2026-10-01T09:12:00,Jordan,Reyes,jordan.reyes@novaplex.com,Novaplex,novaplex.com,US,45,webinar,
+L-002,2026-10-01T10:05:00,Hannah,Okafor,hannah.okafor@brightloom.io,Brightloom,brightloom.io,United Kingdom,900,demo_request,Asked about adding a second workspace
+L-003,2026-10-01T11:40:00,Dev,Malhotra,dev@quillstack.dev,Quillstack,quillstack.dev,,60,pricing_page,
+L-004,2026-10-02T08:30:00,Rosa,Lindqvist,rosa.l@harborline.com,Harborline Freight,harborline.com,US,1500,demo_request,
+L-005,2026-10-02T09:15:00,Felix,Brandt,felix@tidewater-analytics.com,Tidewater Analytics,tidewater-analytics.com,DE,320,contact_sales,
+L-006,2026-10-02T12:01:00,Ishaan,Rao,ishaan@kestrelworks.in,Kestrel Works,kestrelworks.in,,80,webinar,Our team is based in Pune and we run ops for three warehouses
+L-007,2026-10-03T07:45:00,Sam,Porter,samporter88@gmail.com,Brightloom,,US,12,ebook,
+L-008,2026-10-03T10:20:00,Lena,Vogel,lena.vogel@grauberg.de,Grauberg Industrie,grauberg.de,Germany,"1,200",contact_sales,
+L-009,2026-10-03T13:05:00,Marcus,Hill,marcus@lanternpeak.com,Lanternpeak,lanternpeak.com,US,199,pricing_page,
+L-010,2026-10-04T09:00:00,Amelia,Shaw,amelia.shaw@copperwick.co.uk,Copperwick,copperwick.co.uk,GB,200,demo_request,
+L-011,2026-10-04T11:30:00,Chloe,Martin,chloe@atelier-sorel.fr,Atelier Sorel,atelier-sorel.fr,FR,30,webinar,
+L-012,2026-10-05T15:22:00,Jordan,Reyes,"  Jordan.Reyes@NovaPlex.com ",NovaPlex Inc.,www.novaplex.com,usa,45,ebook,Downloaded the routing ebook
+L-013,2026-10-06T08:10:00,Nina,Kowalski,nina@orbitkiln.com,Orbitkiln,https://www.orbitkiln.com/,usa,75,demo_request,
+L-014,2026-10-06T10:45:00,Tom,Reid,tom.reid@saltmarsh.com.au,Saltmarsh Labs,saltmarsh.com.au,Australia,unknown,webinar,
+L-015,2026-10-07T09:30:00,Meera,Iyer,meera.iyer@ferncastle.co,Ferncastle,,India,450,contact_sales,

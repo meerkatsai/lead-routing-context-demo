@@ -1,0 +1,9 @@
+lead_routing:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # Resolved relative to the directory you run dbt from (the repo root
+      # when you use `lead-routing build`). Override with LEAD_ROUTING_DUCKDB.
+      path: "{{ env_var('LEAD_ROUTING_DUCKDB', 'warehouse/lead_routing.duckdb') }}"
+      threads: 1

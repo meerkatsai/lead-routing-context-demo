@@ -1,0 +1,41 @@
+name: lead_routing
+version: "0.1.0"
+config-version: 2
+profile: lead_routing
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+clean-targets: ["target"]
+
+seeds:
+  lead_routing:
+    # Load raw CRM exports as text so the models decide how to parse them.
+    crm_leads:
+      +column_types:
+        lead_id: varchar
+        created_at: timestamp
+        first_name: varchar
+        last_name: varchar
+        email: varchar
+        company_name: varchar
+        company_domain: varchar
+        country: varchar
+        employee_count: varchar
+        source: varchar
+        notes: varchar
+    crm_accounts:
+      +column_types:
+        is_customer: boolean
+        account_owner_id: varchar
+        updated_at: timestamp
+    crm_opportunities:
+      +column_types:
+        owner_id: varchar
+        updated_at: timestamp
+
+models:
+  lead_routing:
+    staging:
+      +materialized: view
+    +materialized: table

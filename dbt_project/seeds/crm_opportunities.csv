@@ -1,0 +1,6 @@
+opportunity_id,account_id,stage,owner_id,updated_at
+O-500,A-102,Discovery,own_maya,2026-09-28T09:05:00
+O-501,A-103,Proposal,own_lukas,2026-09-22T10:00:00
+O-502,A-103,Negotiation,own_maya,2026-09-25T16:40:00
+O-503,A-100,Closed Won,own_oliver,2026-06-30T12:00:00
+O-504,A-104,Discovery,own_priya,2026-09-30T11:20:00

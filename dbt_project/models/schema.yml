@@ -1,0 +1,53 @@
+version: 2
+
+seeds:
+  - name: territory_owners
+    description: One owner per country. A duplicate country here would fan out leads in the join.
+    columns:
+      - name: country_code
+        data_tests: [unique, not_null]
+      - name: territory_owner_id
+        data_tests: [not_null]
+  - name: crm_accounts
+    columns:
+      - name: account_id
+        data_tests: [unique, not_null]
+      - name: company_domain
+        data_tests: [unique, not_null]
+  - name: country_aliases
+    columns:
+      - name: raw_value
+        data_tests: [unique, not_null]
+  - name: crm_opportunities
+    columns:
+      - name: account_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('crm_accounts')
+                field: account_id
+
+models:
+  - name: lead_routing_base
+    description: One row per lead with the normalized fields and context the routing policy reads.
+    columns:
+      - name: lead_id
+        description: Unique, so a bad join can't silently duplicate leads.
+        data_tests: [unique, not_null]
+      - name: company_domain_source
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['provided', 'email']
+      - name: country_code
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('country_aliases')
+                field: country_code
+      - name: duplicate_of_lead_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('crm_leads')
+                field: lead_id
