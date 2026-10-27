@@ -269,10 +269,6 @@ A sensible path to production: run read-only on synthetic data (this repo), then
 - **`No module named 'mcp.server.fastmcp'`**: you're running v1 example code against the v2 SDK. Use `MCPServer` as in `mcp_server.py`.
 - **Claude Desktop doesn't show the tools**: check that the path in the config is absolute, that it points at `lead-routing-mcp` inside `.venv`, and that you fully restarted Claude Desktop.
 
-## Contributing
-
-Issues and pull requests are welcome, especially new edge cases. To add one, add a row to the seed CSVs and to `data/expected_outcomes.csv`, write a test for the precedence it touches, and make sure `pytest` passes. Please don't commit real personal or customer data.
-
 ## License
 
 MIT. See [LICENSE](LICENSE). Built by [Meerkats](https://meerkats.ai).
